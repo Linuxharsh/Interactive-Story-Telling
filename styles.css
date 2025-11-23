@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to button, #1e3c72, #2a5298);
+  font-family: Arial, sans-serif;
+  color: purple;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  width: 90%;
+  height: 100%;
+  max-width: 600px;
+  background: rgba(225, 225, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  animation: fadeIn 2s ease-in-out;
+}
+h1 {
+  text-align: center;
+}
+#story {
+  font-size: large;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.choice-btn{
+width: 100%;
+padding: 12px;
+margin: 10px 0;
+font-size: 16px;
+border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #1e3c72;
+  transition: 0.3s;
+}
+
+.choice-btn:hover {
+  background: #08a42f;
+}
+
+#resetbtn {
+  background: #ffdd57;
+  color: #000;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
